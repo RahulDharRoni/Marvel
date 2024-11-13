@@ -1,0 +1,9 @@
+/* Perspective to create the 3D effect */
+.perspective {
+    perspective: 1000px;
+}
+
+/* Inner content rotation */
+.relative .backface-hidden {
+    backface-visibility: hidden;
+}
