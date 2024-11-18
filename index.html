@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Comics</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<<<<<<< HEAD
 </head>
 <body class="bg-gray-100 text-gray-900">
 
@@ -20,6 +21,132 @@
             </nav>
         </div>
     </header>
+=======
+    <!-- Include Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<style>
+    .swiper {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 3px black;
+    }
+    /* Ensures the video covers the background */
+        .background-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Makes video non-interactive */
+        }
+        
+        /* Top shadow overlay */
+        .top-shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30%; /* Adjust height for shadow coverage */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+            z-index: 1;
+        }
+        /* Continuous scrolling animation */
+.scroll-animation {
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+</style>
+<body class="bg-gray-100 text-gray-900">
+    <!--Body Head-->
+    <div class="bg-gray-900 text-white flex items-center justify-center h-screen">
+        <!-- Background Video -->
+        <div class="background-video absolute inset-0 z-0 ">
+            <iframe
+                src="https://www.youtube.com/embed/IK3IcQhA4NM?autoplay=1&mute=1&loop=1&playlist=IK3IcQhA4NM&controls=0&showinfo=0&modestbranding=1"
+                frameborder="0" allow="autoplay; loop; muted" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Content Section -->
+        <div
+    class="relative z-10 flex items-center justify-center w-full h-screen bg-gradient-to-r from-gray-800/80 to-purple-700/80 p-10">
+    
+    <div class="text-center space-y-6 max-w-4xl mx-auto bg-black shadow-2xl rounded-2xl p-20 bg-gray-600 bg-opacity-25">
+        <p class="text-sm font-semibold text-yellow-500">ON SALE NOVEMBER 13</p>
+        <h1 class="text-4xl font-bold">THIS WEEK'S NEW COMICS</h1>
+        <p class="text-lg">Head into the Marvel Universe's underbelly with Psylocke, witness the 8 Deaths of Spider-Man,
+            stand alongside Rogue and the X-Men, and more in this week's Marvel Comics!</p>
+        <button class="rotate-3 translate-x-2 bg-[#F00] hover:bg-[#C00] text-white font-bold px-6 py-3 rounded-md transition-all duration-300 ease-in-out">
+            Read More
+        </button>
+    
+        <div
+            class="flex justify-center space-x-4 text-sm font-medium mt-10 items-center bg-gray-100 py-6 rounded text-gray-900">
+            <a href="#" class="text-gray-900 border-b-2 border-transparent hover:border-red-600 transition">D23 Brazil
+                Recap</a>
+            <a href="#" class="text-gray-900 border-b-2 border-transparent hover:border-red-600 transition">MARVEL Mystic
+                Mayhem</a>
+            <a href="#" class="text-gray-900 border-b-2 border-transparent hover:border-red-600 transition">The Official
+                Marvel Podcast</a>
+            <a href="#" class="text-red-600 border-b-2 border-red-600">This Week's New Comics</a>
+            <a href="#" class="text-gray-900 border-b-2 border-transparent hover:border-red-600 transition">2024 Marvel</a>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+    <!-- News Feeds -->
+
+    <div class="bg-[#EFF87B] py-4">
+        <div class="overflow-hidden whitespace-nowrap">
+            <div class="scroll-animation flex">
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <span class="text-black font-bold text-lg mx-4">LIVE ONLINE COURSE</span>
+                <!-- Repeat as necessary -->
+            </div>
+        </div>
+
+    </div>
+
+>>>>>>> 69e98ef (Add slider etc)
 
     <!-- Main Content Section -->
     <main class="container mx-auto my-10">
@@ -34,7 +161,11 @@
         </div>
 
     <!-- Comic Cards Container -->
+<<<<<<< HEAD
     <div id="comics-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+=======
+    <div id="comics-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10">
+>>>>>>> 69e98ef (Add slider etc)
         <!-- Comic cards will be injected here by JavaScript -->
     </div>
         <div id="comics-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -42,6 +173,7 @@
             <!-- Comic cards will be injected here by JavaScript -->
         </div>
     </main>
+<<<<<<< HEAD
    <!-- Character Slider Section -->
    <section class="container mx-auto my-8 px-4 flex flex-col">
     <h2 class="text-xl md:text-2xl font-semibold mb-4 text-center">Marvel Characters</h2>
@@ -51,6 +183,15 @@
         <div class="swiper-pagination"></div>
     </div>
 </section>
+=======
+<!-- Character Grid Slider Section -->
+<div class="container mx-auto my-8 px-4">
+    <h2 class="text-xl md:text-2xl font-semibold mb-4 text-center">Marvel Characters</h2>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="character-slider"></div>
+    </div>
+</div>
+>>>>>>> 69e98ef (Add slider etc)
 
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white">
@@ -84,7 +225,16 @@
         </div>
     </footer>
 
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+=======
+    <!-- Include Swiper's JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+>>>>>>> 69e98ef (Add slider etc)
     <script src="script.js"></script>
     <script src="slider.js"></script>
 </body>

@@ -54,8 +54,6 @@ comics.forEach(comic => {
     comicsContainer.appendChild(card);
 });
 
-
-
     } catch (error) {
         console.error("Error fetching comics data:", error);
         loadingMessage.textContent = "Failed to load comics. Please try again later.";
