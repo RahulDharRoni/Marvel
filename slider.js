@@ -139,4 +139,3 @@ async function fetchCharacters() {
 fetchCharacters();
 =======
 document.addEventListener("DOMContentLoaded", fetchCharacters);
->>>>>>> 69e98ef (Add slider etc)
