@@ -7,10 +7,6 @@
 .relative .backface-hidden {
     backface-visibility: hidden;
 }
-<<<<<<< HEAD
-=======
-
-
 
 .swiper {
     width: 100%;
@@ -41,8 +37,41 @@
     /* Rounded corners, optional */
 }
 
+        .background-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Makes video non-interactive */
+        }
+        
+        /* Top shadow overlay */
+        .top-shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30%; /* Adjust height for shadow coverage */
+            background: linear-gradient(to bottom, rgba(233, 3, 3, 0.8), transparent);
+            z-index: 1;
+        }
+        /* Continuous scrolling animation */
+.scroll-animation {
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 
 
 
->>>>>>> 69e98ef (Add slider etc)
+

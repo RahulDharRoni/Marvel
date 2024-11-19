@@ -1,0 +1,62 @@
+    .swiper {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 3px black;
+    }
+
+    /* Ensures the video covers the background */
+    .background-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        /* Makes video non-interactive */
+    }
+
+    /* Top shadow overlay */
+    .top-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        /* Adjust height for shadow coverage */
+        background: linear-gradient(to bottom, rgba(201, 116, 116, 0.8), transparent);
+        z-index: 1;
+    }
+
+    /* Continuous scrolling animation */
+    .scroll-animation {
+        animation: scroll-left 10s linear infinite;
+    }
+
+    @keyframes scroll-left {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
