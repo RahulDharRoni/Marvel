@@ -1,27 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comic Details</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 text-gray-900">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-900">
     <!-- Header Section -->
-    <header class="bg-gray-900 py-4">
-        <div class="container mx-auto flex justify-center items-center">
-            <h1 class="text-3xl font-bold text-white">Marvel Comic Details</h1>
+    <header class="w-full bg-black border-b border-gray-800 z-20 relative">
+      <div
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Left Side -->
+        <div class="flex items-center space-x-6">
+          <button class="text-gray-400 hover:text-white">Log In</button>
+          <button class="text-gray-400 hover:text-white">Join</button>
         </div>
+
+        <!-- Logo -->
+        <div class="text-center">
+          <h1 class="text-red-600 text-3xl font-bold">MARVEL</h1>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center space-x-6">
+          <button class="text-red-600 hover:text-white">
+            Marvel Unlimited
+          </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6 text-gray-400 hover:text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 12h-3m9-7.5A9 9 0 1112 3a9 9 0 0112 1.5z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="bg-gray-900">
+        <div
+          class="container mx-auto px-6 py-2 flex items-center justify-between"
+        >
+          <div class="flex space-x-8">
+            <a href="#" class="text-gray-400 hover:text-white">News</a>
+            <a href="#" class="text-gray-400 hover:text-white">Comics</a>
+            <a href="#" class="text-gray-400 hover:text-white">Characters</a>
+            <a href="#" class="text-gray-400 hover:text-white">Movies</a>
+            <a href="#" class="text-gray-400 hover:text-white">TV Shows</a>
+            <a href="#" class="text-gray-400 hover:text-white">Games</a>
+            <a href="#" class="text-gray-400 hover:text-white">Videos</a>
+            <a href="#" class="text-gray-400 hover:text-white">More</a>
+          </div>
+          <div>
+            <span class="text-gray-400"
+              >Stream Deadpool & Wolverine exclusively on</span
+            >
+            <span class="text-blue-500 font-bold">Disney+</span>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Content Section -->
-    <main class="container mx-auto my-10">
-        <div id="comic-details" class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <!-- Comic details will be injected here by JavaScript -->
-        </div>
+    <main class="container mx-auto my-10 px-4">
+      <div
+        id="comic-details"
+        class="bg-gradient-to-r from-gray-900 to-gray-800 text-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row gap-6 items-center"
+      >
+        <!-- Comic details will be injected here by JavaScript -->
+      </div>
     </main>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white">
+      <div
+        class="container mx-auto py-10 grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left"
+      >
+        <div>
+          <h3 class="text-lg font-semibold mb-3">About Us</h3>
+          <p class="text-gray-400">Explore a wide range of Marvel comics.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-300">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-300">Comics</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-300"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Contact Us</h3>
+          <p class="text-gray-400">Email: info@marvel.com</p>
+          <p class="text-gray-400">Phone: +123-456-7890</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Follow Us</h3>
+          <a href="#" class="text-gray-400 hover:text-gray-300">Facebook</a> |
+          <a href="#" class="text-gray-400 hover:text-gray-300">Instagram</a> |
+          <a href="#" class="text-gray-400 hover:text-gray-300">Twitter</a>
+        </div>
+      </div>
+      <div class="bg-gray-900 text-gray-500 text-center py-4">
+        &copy; 2024 Marvel Comics. All Rights Reserved.
+      </div>
+    </footer>
 
     <script src="details.js"></script>
-</body>
+  </body>
 </html>

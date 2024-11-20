@@ -8,49 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100 text-gray-900">
-
     <header class="w-full bg-black border-b border-gray-800 z-20 relative">
-    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-      <!-- Left Side -->
-      <div class="flex items-center space-x-6">
-        <button class="text-gray-400 hover:text-white">Log In</button>
-        <button class="text-gray-400 hover:text-white">Join</button>
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Left Side -->
+        <div class="flex items-center space-x-6">
+          <button class="text-gray-400 hover:text-white">Log In</button>
+          <button class="text-gray-400 hover:text-white">Join</button>
+        </div>
+        
+        <!-- Logo -->
+        <div class="text-center">
+          <h1 class="text-red-600 text-3xl font-bold">MARVEL</h1>
+        </div>
+        
+        <!-- Right Side -->
+        <div class="flex items-center space-x-6">
+          <button class="text-red-600 hover:text-white">Marvel Unlimited</button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12h-3m9-7.5A9 9 0 1112 3a9 9 0 0112 1.5z" />
+          </svg>
+        </div>
       </div>
-      
-      <!-- Logo -->
-      <div class="text-center">
-        <h1 class="text-red-600 text-3xl font-bold">MARVEL</h1>
-      </div>
-      
-      <!-- Right Side -->
-      <div class="flex items-center space-x-6">
-        <button class="text-red-600 hover:text-white">Marvel Unlimited</button>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-white">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12h-3m9-7.5A9 9 0 1112 3a9 9 0 0112 1.5z" />
-        </svg>
-      </div>
-    </div>
 
-    <!-- Navigation Links -->
-    <nav class="bg-gray-900">
-      <div class="container mx-auto px-6 py-2 flex items-center justify-between">
-        <div class="flex space-x-8">
-          <a href="#" class="text-gray-400 hover:text-white">News</a>
-          <a href="#" class="text-gray-400 hover:text-white">Comics</a>
-          <a href="#" class="text-gray-400 hover:text-white">Characters</a>
-          <a href="#" class="text-gray-400 hover:text-white">Movies</a>
-          <a href="#" class="text-gray-400 hover:text-white">TV Shows</a>
-          <a href="#" class="text-gray-400 hover:text-white">Games</a>
-          <a href="#" class="text-gray-400 hover:text-white">Videos</a>
-          <a href="#" class="text-gray-400 hover:text-white">More</a>
+      <!-- Navigation Links -->
+      <nav class="bg-gray-900">
+        <div class="container mx-auto px-6 py-2 flex items-center justify-between">
+          <div class="flex space-x-8">
+            <a href="#" class="text-gray-400 hover:text-white">News</a>
+            <a href="#" class="text-gray-400 hover:text-white">Comics</a>
+            <a href="#" class="text-gray-400 hover:text-white">Characters</a>
+            <a href="#" class="text-gray-400 hover:text-white">Movies</a>
+            <a href="#" class="text-gray-400 hover:text-white">TV Shows</a>
+            <a href="#" class="text-gray-400 hover:text-white">Games</a>
+            <a href="#" class="text-gray-400 hover:text-white">Videos</a>
+            <a href="#" class="text-gray-400 hover:text-white">More</a>
+          </div>
+          <div>
+            <span class="text-gray-400">Stream Deadpool & Wolverine exclusively on</span>
+            <span class="text-blue-500 font-bold">Disney+</span>
+          </div>
         </div>
-        <div>
-          <span class="text-gray-400">Stream Deadpool & Wolverine exclusively on</span>
-          <span class="text-blue-500 font-bold">Disney+</span>
-        </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
     <!-- Include Swiper's CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -79,7 +78,6 @@
         border-radius: 10px;
         border: 3px black;
     }
-
 
 </style>
 </head>
@@ -121,9 +119,8 @@
 
 </div>
 
-    </div>
+</div>
     <!-- News Feeds -->
-
     <div class="bg-[#EFF87B] py-4">
         <div class="overflow-hidden whitespace-nowrap">
             <div class="scroll-animation flex">
@@ -160,77 +157,46 @@
         <!-- Comic cards will be injected here by JavaScript -->
     </div>
     </main>
-<div class="container mx-auto my-8 px-4">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4 text-center">Marvel Characters</h2>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper" id="character-slider">
-        </div>
-    </div>
-</div>
-
-<!--Blog-->
-<section class="bg-white py-8">
-  <div class="container mx-auto px-6 lg:px-12">
-    <div class="flex flex-wrap -mx-4">
-      
-      <!-- Main Blog Posts Section -->
-      <div class="w-full lg:w-3/4 px-4">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6">The Latest</h2>
-        <div class="space-y-6">
-          <!-- Blog Card -->
-          <article class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-4 border-b pb-6">
-            <img class="w-full md:w-48 h-32 object-cover rounded" src="image1.jpg" alt="Post Image">
-            <div>
-              <p class="text-sm text-red-500 font-semibold uppercase">Comics</p>
-              <h3 class="text-lg font-bold text-gray-800 hover:text-red-500 cursor-pointer">
-                Marvel Reveals 2025 Free Comic Book Day Titles Starring the Fantastic Four, X-Men, and More
-              </h3>
-              <p class="text-sm text-gray-500">8 hours ago</p>
-            </div>
-          </article>
-          <!-- Repeat for more blog posts -->
-          <article class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-4 border-b pb-6">
-            <img class="w-full md:w-48 h-32 object-cover rounded" src="image2.jpg" alt="Post Image">
-            <div>
-              <p class="text-sm text-red-500 font-semibold uppercase">Comics</p>
-              <h3 class="text-lg font-bold text-gray-800 hover:text-red-500 cursor-pointer">
-                Doctor Doom Imposes His Will on the Fantastic Four, X-Men and More
-              </h3>
-              <p class="text-sm text-gray-500">10 hours ago</p>
-            </div>
-          </article>
-          <!-- Add more cards as needed -->
-        </div>
+  <div class="container mx-auto my-8 px-4">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4 text-center">Marvel Characters</h2>
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="character-slider">
+          </div>
       </div>
-
-      <!-- Sidebar Section -->
-      <div class="w-full lg:w-1/4 px-4 mt-8 lg:mt-0">
-        <div class="bg-gray-100 p-4 rounded-lg">
-          <h3 class="text-lg font-bold text-gray-800 mb-4">The Hype Box</h3>
-          <ul class="space-y-4">
-            <li>
-              <a href="#" class="flex items-center space-x-2 hover:text-red-500">
-                <img src="hype1.jpg" alt="Hype Image" class="w-12 h-12 rounded">
-                <span>The Biggest Marvel News From This Week</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="flex items-center space-x-2 hover:text-red-500">
-                <img src="hype2.jpg" alt="Hype Image" class="w-12 h-12 rounded">
-                <span>Disney+ Deadpool and Wolverine Streaming Soon</span>
-              </a>
-            </li>
-            <!-- Add more items as needed -->
-          </ul>
-        </div>
-      </div>
-
-    </div>
   </div>
-</section>
 
-
-
+  <!--Blog Section-->
+  <section class="bg-white py-8">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="flex flex-wrap -mx-4">
+        
+        <!-- Main Blog Posts Section -->
+        <div class="w-full lg:w-3/4 px-4">
+          <h2 class="text-4xl font-bold text-gray-800 mb-6">The Latest</h2>
+          <!-- Post Container -->
+          <div id="postContainer" class="space-y-6">
+            <!-- Blog posts will be injected here dynamically -->
+          </div>
+          <!-- Load More Button -->
+          <div class="text-center mt-6">
+            <button
+              id="loadMoreBtn"
+              class="px-6 py-2 bg-red-500 text-white font-semibold rounded hover:bg-red-600">
+              Load More
+            </button>
+          </div>
+        </div>
+        
+        <!-- Sidebar Section -->
+        <div class="w-full lg:w-1/4 px-4 mt-8 lg:mt-0">
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <img src="https://cdn.marvel.com/content/1x/fcbd_2025_asm_ultimate.jpg" alt="">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white">
@@ -265,11 +231,11 @@
     </footer>
 
     <!-- Include Swiper's JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<script src="blog.js"></script>
+    <script src="blog.js"></script>
     <script src="slider.js"></script>
     <script src="script.js"></script>
     
